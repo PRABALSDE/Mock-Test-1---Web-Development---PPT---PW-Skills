@@ -1,0 +1,119 @@
+# 1)Static:-
+
+<div class="static-example">
+  This is a static element.
+</div>
+
+<style>
+.static-example {
+  position: static;
+}
+</style>
+Explanation: The default position value in CSS is "static".
+Elements with the static position are positioned according
+to the normal flow of the document. They are not affected 
+by the top, bottom, left, or right properties.
+
+# 2)Fixed:-
+
+<div class="fixed-example">
+  This is a fixed element.
+</div>
+
+<style>
+.fixed-example {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+</style>
+Explanation: Elements with a fixed position are positioned
+relative to the browser window. They do not move when the 
+page is scrolled. In the example, the element will be fixed
+20 pixels from the top and 20 pixels from the right of the window.
+
+# 3)Sticky:-
+
+<div class="sticky-example">
+  This is a sticky element.
+</div>
+
+<style>
+.sticky-example {
+  position: sticky;
+  top: 50px;
+}
+</style>
+Explanation: Elements with a sticky position are positioned
+based on the user's scroll position. It acts like a hybrid 
+of relative and fixed positions. The element becomes "stuck" 
+to its parent container when the user scrolls beyond a specified 
+threshold. In the example, the element will stick 50 pixels 
+from the top of its parent container.
+
+# 4)Relative:-
+
+<div class="relative-example">
+  <div class="relative-inner">
+    This is a relatively positioned element.
+  </div>
+</div>
+
+<style>
+.relative-example {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background-color: lightblue;
+}
+
+.relative-inner {
+  position: relative;
+  top: 50px;
+  left: 50px;
+  background-color: yellow;
+}
+</style>
+Explanation: Elements with a relative position are positioned
+relative to their normal position. They can be moved using the
+top, bottom, left, and right properties. In the example, the 
+inner element is positioned 50 pixels from the top and 50 pixels
+from the left of its normal position inside the parent container.
+
+# 5)Absolute:-
+
+<div class="absolute-example">
+  <div class="absolute-inner">
+    This is an absolutely positioned element.
+  </div>
+</div>
+
+<style>
+.absolute-example {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background-color: lightblue;
+}
+
+.absolute-inner {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  background-color: yellow;
+}
+</style>
+Explanation: Elements with an absolute position are positioned
+relative to their closest positioned ancestor or the containing
+block. If there is no positioned ancestor, it will be positioned
+relative to the initial containing block (usually the browser window).
+In the example, the inner element is positioned 50 pixels from the top
+and 50 pixels from the right of its closest positioned ancestor (the parent
+container in this case).
+
+These examples demonstrate the basic usage and behavior of each CSS position.
+
+
+
+
+
